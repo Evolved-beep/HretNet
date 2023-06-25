@@ -33,7 +33,6 @@ const Form = () => {
         
     }
     const stateValue = (e) => {
-        console.log(e.target.value)
         setState(e.target.value)
     }
 
@@ -44,7 +43,7 @@ const Form = () => {
     return (
         <>
         <Link to="/Employee">View Current Employees</Link> 
-        <div class="container">
+        <div className="container">
             <h2>Create Employee</h2>
             <form action="#" id="create-employee">
                 <input className="input_employee" type="text" id="first-name" onChange={(e) => setName(e.target.value)}  placeholder="First name"/>
