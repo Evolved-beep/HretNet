@@ -1,0 +1,8 @@
+.nav_container {
+    height: 90px;
+    background-color: #BDB76B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}

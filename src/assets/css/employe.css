@@ -1,0 +1,49 @@
+.container a {
+    margin: 12px 0;
+}
+
+.employee_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.employee_container h1 {
+    color: #BDB76B;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.employee_container input {
+    padding: 12px 24px;
+    border: 1px solid #BDB76B;
+    border-radius: 12px;
+    margin: 12px 0;
+}
+
+.rdt_TableCol{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    color: black;
+    font-size: 14px;
+    background-color: lightgray;
+}
+
+.rdt_TableRow:nth-child(2n+1) {
+    background-color: white;
+}
+
+.rdt_TableRow:nth-child(2n){
+    background-color: lightgrey;
+}
+
+.kTRUaX{
+    width: 0%;
+}
+
+.table_container input {
+    float: right;
+    padding: 8px 18px;
+}

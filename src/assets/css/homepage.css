@@ -1,0 +1,64 @@
+.homepage_container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+
+a {
+    text-decoration: none;
+    color: #BDB76B;
+    cursor: pointer;
+    margin: 12px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.container h2 {
+    align-self: flex-start;
+    color: #BDB76B;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.container form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 620px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .input_employee {
+    padding: 12px 24px;
+    border: 1px solid #BDB76B;
+    border-radius: 12px;
+    margin: 12px 0;
+    width: 427px;
+}
+
+
+.container button {
+    padding: 12px 24px;
+    border: 1px solid #BDB76B;
+    border-radius: 12px;
+    margin: 12px 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+.container button:focus{
+    background-color: #BDB76B;
+    border: 1px solid white;
+    color: white;
+}
