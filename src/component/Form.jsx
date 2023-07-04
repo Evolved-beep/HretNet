@@ -22,8 +22,8 @@ const Form = () => {
     const [city, setCity] = useState("")
     const [code, setCode] = useState("")
     const [departement, setDepartement] = useState("")
-    const [etat, setState] = useState("")
-    const data = {firstname,lastname,birth:JSON.stringify(birth),date:JSON.stringify(date),street,city,code,departement,etat}
+    const [state, setState] = useState("")
+    const data = {firstname,lastname,birth:JSON.stringify(birth),date:JSON.stringify(date),street,city,code,departement,state}
     const dispatch = useDispatch()
 
     const handleClick = (event) => {
@@ -35,6 +35,9 @@ const Form = () => {
     const stateValue = (e) => {
         setState(e.target.value)
     }
+
+    console.log(state)
+    console.log(states)
 
     const departementValue = (e) => {
         setDepartement(e.target.value)
@@ -52,13 +55,9 @@ const Form = () => {
                 <DatePicker className="input_employee" placeholderText="Start date" selected={date} onChange={(date) => setStart(date)} />
                 <input className="input_employee" placeholder="Street" id="street" type="text" onChange={(e) => setStreet(e.target.value)}/>
                 <input className="input_employee" placeholder="City" id="city" type="text" onChange={(e) => setCity(e.target.value)} />
-                    <Select name="state" id="state" data={states} myFct={stateValue}>
-
-                    </Select>
+                    <Select name="state" id="state" data={states} myFct={stateValue} />
                     <input className="input_employee" placeholder="Zip code" id="zip-code" type="number" onChange={(e) => setCode(e.target.value)} />
-                <Select name="departement" id="departement" data={departements} myFct={departementValue}>
-
-                </Select>
+                <Select name="departement" id="departement" data={departements} myFct={departementValue} />
             </form>
             <button onClick={handleClick}>Save</button> 
             {openModal && <Modal closeModal={setOpenModal} />}

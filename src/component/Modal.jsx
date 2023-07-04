@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../assets/css/modal.css"
 
 const Modal = ({closeModal}) => {
-    console.log("hello")
     return(
         <div className={closeModal ? "modal_container" : "modal_display"}>
             <div className="modal_test">

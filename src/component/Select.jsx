@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Select = ({data, myFct}) => { 
     return(
         <select className="input_employee" onChange={myFct}>
