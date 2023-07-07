@@ -47,6 +47,18 @@ a {
     width: 427px;
 }
 
+.error_input {
+    color: red;
+    font-size: 12px;
+    margin: 0;
+}
+
+.success_input {
+    color: #198754;
+    font-size: 12px;
+    margin: 0;
+}
+
 
 .container button {
     padding: 12px 24px;
